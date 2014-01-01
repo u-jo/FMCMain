@@ -19,6 +19,12 @@
 		41FB15101874CD2500F668A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB14F81874CD2500F668A5 /* UIKit.framework */; };
 		41FB15181874CD2500F668A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41FB15161874CD2500F668A5 /* InfoPlist.strings */; };
 		41FB151A1874CD2500F668A5 /* FMCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FB15191874CD2500F668A5 /* FMCTests.m */; };
+		41FB15241874CE9C00F668A5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB15231874CE9C00F668A5 /* FacebookSDK.framework */; };
+		41FB15261874D0DF00F668A5 /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FB15251874D0DF00F668A5 /* MainStoryBoard.storyboard */; };
+		41FB152A1874D1E700F668A5 /* FMCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FB15291874D1E700F668A5 /* FMCLoginViewController.m */; };
+		41FB152F1874D6E900F668A5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FB152D1874D6E900F668A5 /* Icon.png */; };
+		41FB15301874D6E900F668A5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FB152E1874D6E900F668A5 /* Icon@2x.png */; };
+		41FB15321874D72C00F668A5 /* FMCWelcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41FB15311874D72C00F668A5 /* FMCWelcome.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,13 @@
 		41FB15151874CD2500F668A5 /* FMCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMCTests-Info.plist"; sourceTree = "<group>"; };
 		41FB15171874CD2500F668A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41FB15191874CD2500F668A5 /* FMCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMCTests.m; sourceTree = "<group>"; };
+		41FB15231874CE9C00F668A5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		41FB15251874D0DF00F668A5 /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		41FB15281874D1E700F668A5 /* FMCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCLoginViewController.h; sourceTree = "<group>"; };
+		41FB15291874D1E700F668A5 /* FMCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCLoginViewController.m; sourceTree = "<group>"; };
+		41FB152D1874D6E900F668A5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		41FB152E1874D6E900F668A5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		41FB15311874D72C00F668A5 /* FMCWelcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FMCWelcome.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FB14F71874CD2500F668A5 /* CoreGraphics.framework in Frameworks */,
+				41FB15241874CE9C00F668A5 /* FacebookSDK.framework in Frameworks */,
 				41FB14F91874CD2500F668A5 /* UIKit.framework in Frameworks */,
 				41FB14F51874CD2500F668A5 /* Foundation.framework in Frameworks */,
 			);
@@ -96,6 +110,7 @@
 		41FB14F31874CD2500F668A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41FB15231874CE9C00F668A5 /* FacebookSDK.framework */,
 				41FB14F41874CD2500F668A5 /* Foundation.framework */,
 				41FB14F61874CD2500F668A5 /* CoreGraphics.framework */,
 				41FB14F81874CD2500F668A5 /* UIKit.framework */,
@@ -107,8 +122,9 @@
 		41FB14FA1874CD2500F668A5 /* FMC */ = {
 			isa = PBXGroup;
 			children = (
-				41FB15031874CD2500F668A5 /* FMCAppDelegate.h */,
-				41FB15041874CD2500F668A5 /* FMCAppDelegate.m */,
+				41FB152C1874D6A200F668A5 /* Images */,
+				41FB152B1874D1EE00F668A5 /* Login */,
+				41FB15271874D0F000F668A5 /* Main */,
 				41FB15061874CD2500F668A5 /* Images.xcassets */,
 				41FB14FB1874CD2500F668A5 /* Supporting Files */,
 			);
@@ -142,6 +158,35 @@
 				41FB15161874CD2500F668A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41FB15271874D0F000F668A5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				41FB15031874CD2500F668A5 /* FMCAppDelegate.h */,
+				41FB15041874CD2500F668A5 /* FMCAppDelegate.m */,
+				41FB15251874D0DF00F668A5 /* MainStoryBoard.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		41FB152B1874D1EE00F668A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41FB15281874D1E700F668A5 /* FMCLoginViewController.h */,
+				41FB15291874D1E700F668A5 /* FMCLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		41FB152C1874D6A200F668A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				41FB15311874D72C00F668A5 /* FMCWelcome.jpg */,
+				41FB152D1874D6E900F668A5 /* Icon.png */,
+				41FB152E1874D6E900F668A5 /* Icon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FB152F1874D6E900F668A5 /* Icon.png in Resources */,
+				41FB15261874D0DF00F668A5 /* MainStoryBoard.storyboard in Resources */,
 				41FB14FF1874CD2500F668A5 /* InfoPlist.strings in Resources */,
 				41FB15071874CD2500F668A5 /* Images.xcassets in Resources */,
+				41FB15301874D6E900F668A5 /* Icon@2x.png in Resources */,
+				41FB15321874D72C00F668A5 /* FMCWelcome.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +291,7 @@
 			files = (
 				41FB15011874CD2500F668A5 /* main.m in Sources */,
 				41FB15051874CD2500F668A5 /* FMCAppDelegate.m in Sources */,
+				41FB152A1874D1E700F668A5 /* FMCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/LeeYuZhou/Desktop/FMCMain/FMC,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FMC/FMC-Prefix.pch";
 				INFOPLIST_FILE = "FMC/FMC-Info.plist";
@@ -373,6 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/LeeYuZhou/Desktop/FMCMain/FMC,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FMC/FMC-Prefix.pch";
 				INFOPLIST_FILE = "FMC/FMC-Info.plist";
